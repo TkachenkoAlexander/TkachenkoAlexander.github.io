@@ -1,0 +1,113 @@
+@import "nullstyle.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import url("/#source/SCSS/_icons.scss");
+ 
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  transition: .3s;
+}
+
+.wrapper{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #8B8FD9;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/*main block*/
+
+.container{
+  width: auto;
+  height: auto;
+  background: #565BBF;
+  padding: 3%; //50
+  border-radius: 5px;
+}
+
+.logo{
+  background-image: url('../../img/logos/logo_transparent.png');
+  background-position: center center;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  // max-width: 250px;
+  margin: 0 auto;
+}
+
+.inputs div{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs input:nth-child(1),
+.inputs input:nth-child(2){
+  height: 40px;
+  margin: 5px 0;
+  padding: 0 9px;
+  border-radius: 5px;
+}
+
+.inputs input:nth-child(1):focus,
+input:nth-child(2):focus{
+  box-shadow: 0px 0px 6px 0px rgba(255,255,255,1);
+}
+
+.inputs .btn:focus{
+  box-shadow: none;
+}
+
+.btn{
+  align-self: flex-end;
+  background: #039974;
+  width: 136px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:hover{
+  background: #03A67D;
+}
+
+@media(min-width: 1100px){
+  .logo{
+    width: 320px;
+    height: 320px;
+  }
+
+  .container{
+    padding: 35px 35px 35px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .inputs input:nth-child(1),
+  .inputs input:nth-child(2){
+    width: 300px;
+  }
+
+  .inputs{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn{
+    margin: 0 0;
+    align-self: flex-end;
+  }
+}

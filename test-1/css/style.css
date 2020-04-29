@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+@import url("/#source/SCSS/_icons.scss");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+  button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+
+a {
+  text-decoration: none; }
+  a:visited, a:hover {
+    text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+/*--------------------*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+
+.wrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #8B8FD9;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden; }
+
+/*main block*/
+.container {
+  width: auto;
+  height: auto;
+  background: #565BBF;
+  padding: 3%;
+  border-radius: 5px; }
+
+.logo {
+  background-image: url("../../img/logos/logo_transparent.png");
+  background-position: center center;
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%; }
+
+.inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto; }
+
+.inputs div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.inputs input:nth-child(1),
+.inputs input:nth-child(2) {
+  height: 40px;
+  margin: 5px 0;
+  padding: 0 9px;
+  border-radius: 5px; }
+
+.inputs input:nth-child(1):focus,
+input:nth-child(2):focus {
+  -webkit-box-shadow: 0px 0px 6px 0px white;
+  box-shadow: 0px 0px 6px 0px white; }
+
+.inputs .btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.btn {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  background: #039974;
+  width: 136px;
+  color: #fff;
+  font-size: 16px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+
+.btn:hover {
+  background: #03A67D; }
+
+@media (min-width: 1100px) {
+  .logo {
+    width: 320px;
+    height: 320px; }
+  .container {
+    padding: 35px 35px 35px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .inputs input:nth-child(1),
+  .inputs input:nth-child(2) {
+    width: 300px; }
+  .inputs {
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .btn {
+    margin: 0 0;
+    -ms-flex-item-align: end;
+    align-self: flex-end; } }
